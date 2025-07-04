@@ -2,10 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function move_player(){
 #region MOVE
-right = keyboard_check(ord("D")) or keyboard_check(vk_right) or direita
-left = keyboard_check(ord("A")) or keyboard_check(vk_left) or esquerda
-jump = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up) or cima
-squat = keyboard_check(ord("S")) or keyboard_check(vk_down) or baixo
+
+gamepad_set_axis_deadzone(global.joystick, 0.25)
+
+right = keyboard_check(ord("D")) or keyboard_check(vk_right) or direita or gamepad_axis_value(global.joystick, gp_axislh) or gamepad_axis_value(global.joystick, gp_padr) > 0.25
+left = keyboard_check(ord("A")) or keyboard_check(vk_left) or esquerda or gamepad_axis_value(global.joystick, gp_axislh) or gamepad_axis_value(global.joystick, gp_padl) < -0.25
+jump = keyboard_check_pressed(ord("W")) or keyboard_check_pressed(vk_up) or cima or gamepad_button_check(global.joystick ,gp_face1)
+squat = keyboard_check(ord("S")) or keyboard_check(vk_down) or baixo or gamepad_axis_value(global.joystick, gp_axislh) or gamepad_axis_value(global.joystick, gp_padd) > 0.25
 
 hspd = (right - left) * spd
 

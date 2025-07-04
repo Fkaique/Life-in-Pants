@@ -42,7 +42,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.1400.0.831",
+    "IDEVersion":"2024.1400.0.838",
   },
   "name":"Life in Pants",
   "resources":[
@@ -102,11 +102,14 @@
     {"id":{"name":"snd_pacos","path":"sounds/snd_pacos/snd_pacos.yy",},},
     {"id":{"name":"snd_pulo","path":"sounds/snd_pulo/snd_pulo.yy",},},
     {"id":{"name":"snd_trilha","path":"sounds/snd_trilha/snd_trilha.yy",},},
+    {"id":{"name":"capa","path":"sprites/capa/capa.yy",},},
     {"id":{"name":"menu","path":"sprites/menu/menu.yy",},},
     {"id":{"name":"menu29","path":"sprites/menu29/menu29.yy",},},
     {"id":{"name":"menu30","path":"sprites/menu30/menu30.yy",},},
     {"id":{"name":"spr_armadilha","path":"sprites/spr_armadilha/spr_armadilha.yy",},},
     {"id":{"name":"spr_atirador","path":"sprites/spr_atirador/spr_atirador.yy",},},
+    {"id":{"name":"spr_btnT","path":"sprites/spr_btnT/spr_btnT.yy",},},
+    {"id":{"name":"spr_btnx","path":"sprites/spr_btnx/spr_btnx.yy",},},
     {"id":{"name":"spr_chave","path":"sprites/spr_chave/spr_chave.yy",},},
     {"id":{"name":"spr_cobaia","path":"sprites/spr_cobaia/spr_cobaia.yy",},},
     {"id":{"name":"spr_colision","path":"sprites/spr_colision/spr_colision.yy",},},

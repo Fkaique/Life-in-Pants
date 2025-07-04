@@ -1,10 +1,12 @@
 /// @description Insert description here
+
+
 mortes=0
 paused = false
 spr=0
 global.finalizado = 0
-
-joystick=true
+global.joystick = -1
+joystick=false
 
 if file_exists("SaveLIP.dat"){
 	ini_open("SaveLIP.dat")
